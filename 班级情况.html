@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../image/lighting.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>20电力机车</title>
+</head>
+<body>
+    <header>
+    <div class="header-f">
+    <div class="logo">
+    <h3>
+        <a href="index.html">
+        20电力机车
+    </a>
+    </h3>
+</div>
+    <div class="nav">
+    <ul>
+       <li><a href="index.html">首页</a></li>
+       <li><a href="http://zhgl.nbzjzx.com.cn/eisu/fpf/login/loginForPassport.action" target="_blank">学生</a></li>
+       <li><a href="班级情况.html">班级</a></li> 
+       <li><a href="#">作业情况</a></li> 
+       <li><a href="#">志愿者活动</a></li> 
+       <li><a href="#">关于我们</a></li> 
+    </div>
+
+</div>  
+<div id="showcase">
+    <div class="containar">
+        <div class="showcase-content">
+        <h1>这位同学，欢迎来到<span class="text-primary">班级情况！</span></h1>
+        <p>提醒你一下,点击坐上角的logo能回首页哦</p>
+        <a  class="zz"href="https://space.bilibili.com/287359467?spm_id_from=333.1007.0.0">关于站长</a>
+        </div>
+    </div>
+</div>
+<div class="shell">
+ <ul class="images">
+    <li class="img"></li>
+    <li class="img"></li>
+    <li class="img"></li>
+    <li class="img"></li>
+    
+    
+</ul>
+    <ul class="min-images">
+        <li class="min"></li>
+        <li class="min"></li>
+        <li class="min"></li>
+        <li class="min"></li>
+        
+        
+    </ul>
+    <div class="button">
+        <div class="button-left"><</div>
+        <div class="button-right">></div>
+    </div>
+</div>
+<script>
+    let left = document.querySelector('.button-left')
+    let right = document.querySelector('.button-right')
+    let min = document.querySelectorAll('.min')
+    let images = document.querySelector('.images')
+    let index = 0
+    let time
+    function position() {
+        images.style.left= (index * -100 )+ "%"
+    
+    }
+    function add(){
+        if(index >=min.length-1){
+            index = 0
+        }else{
+            index++
+        }
+    }
+    function desc(){
+        if(index <1){
+            index = min.length-1
+        }else(
+            index--
+        )
+    }
+    function timer(){
+        time = setInterval(()=>{
+            index++
+            desc()
+            add()
+            position()
+        },3000)
+    }
+    left.addEventListener('click',()=>{
+        desc()
+        position()
+        clearInterval(time)
+        timer()
+    })
+    right.addEventListener('click',()=>{
+        desc()
+        position()
+        clearInterval(time)
+        timer()
+    })
+    for(let i = 0;i<min.length;i++){
+        min[i].addEventListener('click',()=>{
+            index = i
+            position()
+            clearInterval(time)
+            timer()
+        })
+    }
+    timer()
+    </script>
+    <div class="id" >
+    <h1>20电力机车</h1>
+    <p>成立自2020年9月,一共33人,目前共青团员有6名,后面不知道怎么介绍了后面不知道怎么介绍了后面不知道怎么介绍了后面不知道怎么介绍了后面不知道怎么介绍了后面不知道怎么介绍了后面不知道怎么介绍了后面不知道怎么介绍了后面不知道怎么介绍了后面不知道怎么介绍了后面不知道怎么介绍了<p>
+
+    </div>
+    <div class="id2">
+    <h1>班级成员</h1>
+    <ul>
+        班长：胡奇斌
+    </ul>
+    </div>
+    
+    <div class="lb">
+        <h1>班级成员</h1>
+    <ul>
+        <li>伟大的李城大人</li>
+        <li>伟大的李城大人</li>
+        <li>伟大的李城大人</li>
+        <li>伟大的李城大人</li>
+        <li>伟大的李城大人</li>
+        <li>伟大的李城大人</li>
+        <li>伟大的李城大人</li>
+        <li>伟大的李城大人</li>
+        <li>伟大的李城大人</li>
+        <li>伟大的李城大人</li>
+        <li>伟大的李城大人</li>
+        
+    </ul>
+    <ul>
+        <li>伟大的李城大人</li>
+        <li>伟大的李城大人</li>
+        <li>伟大的李城大人</li>
+        <li>伟大的李城大人</li>
+        <li>伟大的李城大人</li>
+        <li>伟大的李城大人</li>
+        <li>伟大的李城大人</li>
+        <li>伟大的李城大人</li>
+        <li>伟大的李城大人</li>
+        <li>伟大的李城大人</li>
+        <li>伟大的李城大人</li>
+        
+    </ul>
+    <ul>
+        <li>伟大的李城大人</li>
+        <li>伟大的李城大人</li>
+        <li>伟大的李城大人</li>
+        <li>伟大的李城大人</li>
+        <li>伟大的李城大人</li>
+        <li>伟大的李城大人</li>
+        <li>伟大的李城大人</li>
+        <li>伟大的李城大人</li>
+        <li>伟大的李城大人</li>
+        <li>伟大的李城大人</li>
+        <li>伟大的李城大人</li>
+        
+    </ul>
+    </div>
+</body>
+</html>

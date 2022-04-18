@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background: #000;
+    box-shadow: 2px 3px 5px #ccc;
+}
+.header-f{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    
+}
+
+
+.mylink{
+    
+    padding:100px 400px
+}
+.li {list-style-type: none;}
+.logo{
+    font-size: 24px;
+    height: 80px;
+    line-height: 80px;
+}
+.logo a{
+    color: #4498f8;
+}
+a{
+    text-decoration: none;
+    
+}
+.nav ul{
+    display: flex;
+    justify-content: start;
+}
+.nav ul li{
+    height: 80px;
+    line-height: 80px;
+    margin: 0 20px;
+    
+}
+.nav ul li a{
+    font-size: 20px;
+    color: #fff;
+}
+.nav ul li a:hover{
+color: #4498f8;
+}
+.szq{
+    
+    width: 180px;
+    height: 250px;
+    background: #4ad3b5;
+    margin:40px;
+    padding: 0px;
+    text-align:center
+    
+
+}
+.szq img{
+    margin: 0 20px;
+    border-radius:50%
+    
+}
+.szq{
+    border-radius: 15px;
+}
+#showcase{
+    background:url(../image/class.jpg) no-repeat center center/cover;
+    height: 600px;
+}
+#showcase .showcase-content{
+    color:#fff;
+    text-align: center;
+    padding-top:170px;
+}
+.text-primary{
+    color: #f7c08a;
+}
+#showcase .showcase-content h1{
+    font-size: 60px;
+    line-height: 1.2em;
+}
+#showcase .showcase-content p{
+    font-size: 20px;
+    line-height: 1.7em;
+    padding-bottom: 20px;
+}
+.zz{
+    display:inline-block;
+    font-size: 18px;
+    color: #fff;
+    background:#333 ;
+    padding: 13px 20px;
+}
+.zz:hover{
+    background:#f7c08a;
+}
+.box{
+    float: left;
+    width: 28%;
+    height: 179px;
+    padding: 50px;
+    text-align: center;
+}
+.bg-light1{
+    
+    background: #41a0c5;
+    color: #333;
+    float:left;
+}
+.bg-light2{
+    
+    background: #f4f4f4;
+    color: #333;
+    float:left;
+}
+.bg-primary{
+    
+    background:#f7c08a;
+    color: #333;
+    float:left;
+}
+.box p{
+    font-size: 20px;
+    line-height: 1.7em;
+    padding-bottom: 20px;
+}
+.bg-light1:hover{
+    background: #4ad3b5;
+}
+.bg-light2:hover{
+    background: #cf9553;
+}
+.bg-primary:hover{
+    background: #df4b4b;
+}
+
+#kebiao table{
+        width: 100%;
+    background:#cce658;
+}
+#kebiao table td{
+    text-align: center;
+}
+td:hover{
+    background:#f7c08a;
+}
+.bg-primary img{
+    margin: 0 20px;
+    border-radius:50%
+    
+}
+.entity{
+    width: 600px;
+    height: 450px;
+    background: #4ad3b5;
+    margin:40px;
+    padding: 40px;
+    text-align:center
+}
+.entity{
+    border-radius: 15px;
+}
+body{
+    background: url("../image/background.jpg") no-repeat center center fixed;
+            /*兼容浏览器版本*/
+            -webkit-background-size: cover;
+            -o-background-size: cover;                
+            background-size: cover;
+}
+.shell{
+    box-shadow: 20px 20px 20px rgba(0,0,0,.5);
+    width: 45%;
+    height: 500px;
+    position: relative;
+    overflow-x: hidden;
+    border-radius: 5px;
+    border: 10px #fff solid;
+    float: left;
+}
+.images{
+    width: 400%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: .2s;
+}
+.img{
+    width: 100%;
+    background-size: cover;
+}
+.img:nth-child(1){
+    background-image: url(../image/myclass.jpg);
+}
+.img:nth-child(2){
+    background-image: url(../image/myclass.jpg);
+}
+.img:nth-child(3){
+    background-image: url(../image/myclass.jpg);
+}
+.img:nth-child(4){
+    background-image: url(../image/myclass.jpg);
+}
+
+.min-images{
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 20px;
+    width: 40%;
+    z-index: 999;
+    right: 10%;
+}
+.min{
+    width: 60px;
+    height: 60px;
+    /*鼠标悬浮时显示按钮指针*/
+    cursor: pointer;
+    border-radius: 50%;
+    background-size: cover;
+    border: solid 5px rgba(255,255,255,.5);
+    /*照片偏移量*/
+    background-position: -20px 0;
+}
+.min:nth-child(1){
+    background-image: url(../image/myclass.jpg);
+}
+.min:nth-child(2){
+    background-image: url(../image/lighting.png);
+}
+.min:nth-child(3){
+    background-image: url(../image/class.jpg);
+}
+.min:nth-child(4){
+    background-image: url(../image/class.jpg);
+}
+.button{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+}
+.button-left,
+.button-right{
+    font-size: 50px;
+    background-color: rgba(160, 190, 255, 0.7);
+    padding: 0 20px;
+    line-height: 500px;
+    cursor: pointer;
+}
+.id{
+    background: #151e17;
+ width: 45%;
+   height: 500px;
+   float: right;
+   border: 10px #656e59 solid;
+   border-radius: 5px;
+}
+.id h1{
+    font-size: 50px;
+    color: #cae0e5;
+    text-align:center
+}
+.id p{
+    font-size: 35px;
+    color: #cae0e5;
+    padding: 0 20px;
+}
+.id2{
+    background: #151e17;
+ width: 95%;
+   height: 100px;
+   
+   border: 22px #656e59 solid;
+   border-radius: 5px;
+   margin-top: 580px;
+   margin-left: 20px;
+   margin-right: 20px;
+   
+}
+.id2 h1{
+    font-size: 50px;
+    color: #cae0e5;
+    text-align:center
+}
+.id2 ul{
+    font-size: 35px;
+    color: #cae0e5;
+    padding: 0 20px;
+}
+.lb{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #111;
+}
+.lb ul{
+    padding: 0 50px;
+}
+.lb ul li{
+    list-style: none;
+    font-size: 1.5em;
+    font-family: monospace;
+    /* width: 600px; */
+    line-height: 50px;
+    text-align: center;
+    height: 50px;
+    position: relative;
+    color: rgb(168, 168, 168);
+    transition:color 0.8s, font-size 0.8s,transform 0.8s;
+}
+.lb ul li:hover{
+    color: rgb(255, 255, 255);
+    font-size: 1.8em;
+    transform: rotate(-0.5deg);
+}
+.lb ul li:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00ff0d;
+    border-radius: 25px;
+    z-index: -1;
+    transform: scaleY(0);
+    transition: transform 0.5s;
+    transform-origin: bottom;
+}
+.lb ul li:hover:before
+{
+    transform: scaleY(1);
+    transition: transform 0.5s;
+    transform-origin: top;
+}
+.lb ul li::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00ff0d;
+    border-radius: 25px;
+    z-index: -2;
+    transform: scaleY(0);
+    transition: transform 0.5s;
+    transform-origin: bottom;
+    filter: blur(40px);
+}
+.lb ul li:hover::after{
+    transform: scaleY(1);
+    transition: transform 0.5s;
+    transform-origin: top;
+}
+.lb h1{
+    font-size: 50px;
+    color: #cae0e5;
+    
+    
+}
